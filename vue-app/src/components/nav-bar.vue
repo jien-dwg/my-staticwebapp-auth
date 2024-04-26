@@ -43,7 +43,9 @@ export default {
       <p class="menu-label">Auth</p>
       <div class="menu-list auth">
         <template v-if="!userInfo">
-          <a :href="`/.auth/login/aad?post_login_redirect_uri=${redirect}`"></a>
+          <a :href="`/.auth/login/aad?post_login_redirect_uri=${redirect}`">
+            Login
+          </a>
           <!-- <template v-for="provider in providers" :key="provider">
             <a :href="`/.auth/login/${provider}?post_login_redirect_uri=${redirect}`">
               {{ provider }}
