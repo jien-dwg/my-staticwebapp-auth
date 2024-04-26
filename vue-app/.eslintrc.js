@@ -20,6 +20,7 @@ module.exports = {
         printWidth: 80,
       },
     ],
+    'vue/no-v-for-template-key': 'off',
     'vue/no-unused-components': [
       'error',
       {
